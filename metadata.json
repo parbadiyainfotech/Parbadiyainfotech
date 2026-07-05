@@ -1,0 +1,6 @@
+{
+  "name": "Parbadiya Infotech",
+  "description": "Expert CCTV and IT solutions. Secure your physical and digital assets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

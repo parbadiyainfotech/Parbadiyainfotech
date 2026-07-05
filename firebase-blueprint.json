@@ -1,0 +1,74 @@
+{
+  "collections": {
+    "inquiries": {
+      "fields": {
+        "clientName": { "type": "string", "required": true },
+        "phone": { "type": "string", "required": true },
+        "serviceType": { "type": "string", "required": true },
+        "status": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": true }
+      },
+      "indexes": [
+        {
+          "fields": [
+            { "field": "createdAt", "direction": "descending" }
+          ]
+        }
+      ]
+    },
+    "services": {
+      "fields": {
+        "title": { "type": "string", "required": true },
+        "description": { "type": "string", "required": true },
+        "icon": { "type": "string", "required": true },
+        "price": { "type": "string", "required": false },
+        "createdAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "settings": {
+      "fields": {
+        "phone": { "type": "string", "required": true },
+        "email": { "type": "string", "required": true },
+        "address": { "type": "string", "required": true },
+        "mapsUrl": { "type": "string", "required": true },
+        "heroHeadline": { "type": "string", "required": false },
+        "heroSubtext": { "type": "string", "required": false },
+        "heroImageUrl": { "type": "string", "required": false },
+        "whatsapp": { "type": "string", "required": false },
+        "instagramUrl": { "type": "string", "required": false },
+        "facebookUrl": { "type": "string", "required": false },
+        "updatedAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "testimonials": {
+      "fields": {
+        "clientName": { "type": "string", "required": true },
+        "role": { "type": "string", "required": false },
+        "content": { "type": "string", "required": true },
+        "rating": { "type": "number", "required": true },
+        "avatarUrl": { "type": "string", "required": false },
+        "createdAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "projects": {
+      "fields": {
+        "title": { "type": "string", "required": true },
+        "imageUrl": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "brands": {
+      "fields": {
+        "name": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "admin_profile": {
+      "fields": {
+        "recoveryEmail": { "type": "string", "required": true },
+        "updatedAt": { "type": "timestamp", "required": true }
+      }
+    }
+  }
+}
